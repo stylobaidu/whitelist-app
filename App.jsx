@@ -5,7 +5,7 @@ import { auth, db } from './firebaseConfig';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
 import { addDoc, collection, query, where, getDocs, deleteDoc, doc, getDoc } from 'firebase/firestore';
 
-const WEBHOOK_URL = 'https://your-webhook-url.com'; // replace with your actual webhook URL
+const WEBHOOK_URL = 'https://whitelist-app-git-main-stylo-baidus-projects.vercel.app/api/webhook'; // replace with your actual webhook URL
 
 export default function App() {
   const [email, setEmail] = useState('');
